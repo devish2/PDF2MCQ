@@ -65,7 +65,8 @@ To set up and run the application:
 
 1. Install dependencies: 
 
-pi p  i nst al l  - r  r equi r ement s. t xt![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.006.png)
+`pip  install  -r  requirements.txt`
+![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.006.png)
 
 pi p  i nst al l  pyPDF2
 
