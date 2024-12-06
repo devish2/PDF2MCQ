@@ -1,5 +1,5 @@
 import streamlit as st # type: ignore
-import PyPDF2 # type: ignore
+import PyPDF2  # type: ignore
 import google.generativeai as genai # type: ignore
 import os
 
@@ -100,7 +100,7 @@ def main():
     )
     
     # Title and description
-    st.title("📄 PDF Query Assistant powered by Gemini")
+    st.title("📄 Covert your PDF into a Question Paper.")
     st.markdown("""
     Upload a PDF file and ask questions about its contents using Google's Gemini AI.
     
@@ -140,7 +140,7 @@ def main():
     # Query Input Section
     query_prompt = st.text_input(
         "Enter your query", 
-        placeholder="What would you like to know about this PDF?",
+        placeholder="Write your prompt to generate a question paper!",
         disabled=not st.session_state.pdf_text
     )
     
