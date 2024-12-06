@@ -62,33 +62,33 @@ Installation and Running
 
 To set up and run the application:
 
-1. Install dependencies: 
+### Install dependencies: 
 
-pi p  i nst al l  - r  r equi r ement s. t xt![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.006.png)
+`pip  install -r requirements.txt`
 
-pi p  i nst al l  pyPDF2
+`pip  install  pyPDF2`
 
-pi p  i nst al l  st r eaml i t  pdf pl umber  googl e- gener at i veai
+`pip  install  streamlit  pdf plumber  google-generativeai`
 
-2. Run the app: 
+### Run the app: 
 
-st r eaml i t  r un  mcq. py![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.007.png)
+`streamlit  run  mcq.py`
 
-Setting Up Gemini
+### Setting Up Gemini
 
 1. Access the Gemini Platform: Log in to your Google Cloud Console and enable Gemini APIs in your project.
-2. Install Required SDKs: Install the necessary Google Cloud libraries using  pi p  i nst al l  googl e- cl oud . These libraries allow ![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.008.png)seamless interaction with Gemini APIs.
-2. Authenticate: Download your Google Cloud credentials and authenticate your project using
+2. Install Required SDKs: Use `pip install google-cloud` to install the necessary Google Cloud libraries. These libraries allow seamless interaction with Gemini APIs![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.008.png).
+3. Authenticate: Download your Google Cloud credentials and authenticate your project using
 
 Tune Model for Prompts:
 
-To fine-tune the model, I utilized Google AI Studio to extract ![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.009.jpeg)question papers from PDF documents. Subsequently, I employed Gen AI Prompts to further refine the model’s capabilities.
+To fine-tune the model, I utilized Google AI Studio to extract![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.009.jpeg)question papers from PDF documents. Subsequently, I employed Gen AI Prompts to refine the model’s capabilities.
 
 Navigating Dashboard to New Tuned Model
 
 ![ref1]
 
-Following the selection of the tune model, a structured prompt was crafted to facilitate user-like ![ref1]queries during the fine-tuning process.
+Following the selection of the tune model, a structured prompt was crafted to facilitate user-like![ref1]queries during the fine-tuning process.
 
 ![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.011.jpeg)
 
@@ -101,16 +101,16 @@ Some samples of tune input.![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5
 Code Sample:
 
 1. Import all dependencies
-
-   i mpor t  s t r eaml i t  as  s t ![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.014.png)
-
-   i mpor t  PyPDF2  
-
-   i mpor t  googl e. gener at i veai  as  genai i mpor t  os
+```
+   import  streamlit  as  st ![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.014.png)
+   import  PyPDF2  
+   import  google.generativeai  as  genai
+   import  os
+```
 
 2. Configure the Gemini API with the API key from the environment variable.
 
-def  conf i gur e\_gemi ni \_api ( ) :![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.015.png)
+def  configure\_gemini \_api ( ) :![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.015.png)
 
 `     `"""
 
