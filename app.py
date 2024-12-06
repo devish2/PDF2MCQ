@@ -83,8 +83,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Installation Requirements:
-# pip install streamlit pypdf
-# 
-# Run the app:
-# streamlit run pdf_uploader.py
