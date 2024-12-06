@@ -5,7 +5,7 @@ Introduction
 
 For teachers, educational hubs, and exam preparation platforms, creating high-quality question papers and Multiple-Choice Question (MCQ) assessments is crucial yet time-consuming. Fortunately, several tools and techniques can streamline this process, allowing educators to focus on content creation rather than tedious formatting. This article explores how to effectively generate PDFs for question papers and MCQs, catering to various needs, from classroom tests to large-scale mock exams like the JEE.
 
-![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.001.jpeg)
+![(Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.001.jpeg)]
 
 Overview
 
@@ -68,13 +68,14 @@ To set up and run the application:
 `pip  install  -r  requirements.txt`
 ![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.006.png)
 
-pi p  i nst al l  pyPDF2
+`pip install  pyPDF2`
 
-pi p  i nst al l  st r eaml i t  pdf pl umber  googl e- gener at i veai
+`pip  install  streamlit  pdf plumber  google- generativeai`
 
 2. Run the app: 
 
-st r eaml i t  r un  mcq. py![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.007.png)
+`streamlit  run  mcq.py`
+![] (Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.007.png)
 
 Setting Up Gemini
 
@@ -104,13 +105,17 @@ Code Sample:
 
 1. Import all dependencies
 
-   i mpor t  s t r eaml i t  as  s t ![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.014.png)
+```
+    import  streamlit  as  st 
+![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.014.png)
 
-   i mpor t  PyPDF2  
+   import  PyPDF2  
 
-   i mpor t  googl e. gener at i veai  as  genai i mpor t  os
+   import  google. generativeai  as  genai
+   import  os
+```
 
-2. Configure the Gemini API with the API key from the environment variable.
+3. Configure the Gemini API with the API key from the environment variable.
 
 def  conf i gur e\_gemi ni \_api ( ) :![](Aspose.Words.38df70a7-5738-416c-8084-d21f37ab81b5.015.png)
 
